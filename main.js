@@ -13,7 +13,7 @@ function toBinary(number) {
     number = input.value;
     let x = 0;
     for (let i = 0; i < array.length; i++) {
-        numberDivided = number / 2; 
+        numberDivided = number / 2;
         numberQtn = Math.floor(numberDivided); // Quotient
         remainder = number % 2;
         number = numberDivided;
