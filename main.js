@@ -1,5 +1,6 @@
 let array = []; // 16 symbols
 array.length = 16;
+array.fill(0);
 // WEB REFERENCES
 const input = document.getElementById('input');
 const output = document.getElementById('output');
@@ -7,8 +8,7 @@ const output = document.getElementById('output');
 input.addEventListener("input", toBinary);
 
 // app
-
-output.textContent = '0000000000000000';
+output.textContent = array.join("");
 function toBinary(number) {
     number = input.value;
     let x = 0;
